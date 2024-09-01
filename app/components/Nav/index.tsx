@@ -24,10 +24,10 @@ export default function NavBar() {
         alt="logo"
         width={50}
         height={50}
-        className="ml-16"
+        className="lg:ml-16 ml-5"
       />
 
-      <div className="sm:hidden mr-16">
+      <div className="sm:hidden mr-5">
         <FaBars
           className="text-3xl text-white cursor-pointer"
           onClick={toggleMenu}
