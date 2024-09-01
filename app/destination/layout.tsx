@@ -25,7 +25,7 @@ export default function DestinationLayout({
 }>) {
   return (
     <section
-      className={`h-full w-full min-h-screen min-w-screen bg-destination-tablet lg:bg-destination-desktop md:bg-destination-tablet bg-no-repeat bg-cover ${barlow_condensed.className}`}
+      className={`h-full w-full bg-destination-tablet lg:bg-destination-desktop md:bg-destination-tablet bg-no-repeat bg-cover ${barlow_condensed.className}`}
     >
       <NavBar />
       <div className={`h-full ${bellefeir.className}`}>{children}</div>

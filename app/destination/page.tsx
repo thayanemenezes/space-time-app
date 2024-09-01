@@ -25,7 +25,7 @@ export default function Destination() {
           alt={activeTab}
           width={450}
           height={450}
-          className="w-3/6 md:w-4/6 h-auto m-auto"
+          className="w-4/6 md:w-5/6 h-auto m-auto"
         />
       </div>
       <DestinationTabs activeTab={activeTab} setActiveTab={setActiveTab} />

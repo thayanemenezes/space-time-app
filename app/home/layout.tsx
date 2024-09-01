@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <section
-      className={`h-full w-full min-h-screen min-w-screen lg:bg-home-desktop md:bg-home-tablet bg-home-mobile bg-no-repeat bg-cover ${barlow_condensed.className}`}
+      className={`h-full w-full lg:bg-home-desktop md:bg-home-tablet bg-home-tablet bg-no-repeat bg-cover bg-center  ${barlow_condensed.className}`}
     >
       <NavBar />
       <main className={`h-full ${bellefeir.className}`}>{children}</main>

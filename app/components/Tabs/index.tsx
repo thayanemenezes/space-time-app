@@ -65,7 +65,7 @@ export default function DestinationTabs({
       </ul>
 
       <div className="mt-4 text-lg">
-        <h2 className="text-8xl font-sans font-normal">
+        <h2 className="md:text-8xl text-6xl font-sans font-normal">
           {tabContent[activeTab].title}
         </h2>
         <p className="mt-2">{tabContent[activeTab].text}</p>
