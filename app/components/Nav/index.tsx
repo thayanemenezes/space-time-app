@@ -113,7 +113,7 @@ export default function NavBar() {
               }`}
               onClick={toggleMenu}
             >
-              00 HOME
+              <span className="font-bold mr-2">00</span> HOME
             </Link>
             <Link
               href="/destination"
@@ -122,7 +122,7 @@ export default function NavBar() {
               }`}
               onClick={toggleMenu}
             >
-              01 DESTINATION
+              <span className="font-bold mr-2">01</span> DESTINATION
             </Link>
             <Link
               href="/crew"
@@ -131,7 +131,7 @@ export default function NavBar() {
               }`}
               onClick={toggleMenu}
             >
-              02 CREW
+              <span className="font-bold mr-2">02</span> CREW
             </Link>
             <Link
               href="/technology"
@@ -140,7 +140,7 @@ export default function NavBar() {
               }`}
               onClick={toggleMenu}
             >
-              03 TECHNOLOGY
+              <span className="font-bold mr-2">03</span> TECHNOLOGY
             </Link>
           </nav>
         </div>

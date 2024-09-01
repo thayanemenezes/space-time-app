@@ -16,7 +16,7 @@ export default function Home() {
           experience!
         </p>
       </div>
-      <button className="p-24 bg-white text-gray-900 text-3xl rounded-full outline outline-offset-0 outline-bg-transparent hover:outline-50 hover:outline-bg-transparent">
+      <button className="md:p-24 p-16 uppercase bg-white text-gray-900 text-3xl rounded-full outline outline-offset-0 outline-bg-transparent hover:outline-50 hover:outline-bg-transparent">
         <Link href="/destination">Explore</Link>
       </button>
     </div>
