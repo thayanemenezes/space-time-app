@@ -22,7 +22,7 @@ export default function TechnologyLayout({
       className={`h-full w-full bg-technology-tablet lg:bg-technology-desktop md:bg-technology-tablet bg-no-repeat bg-cover ${barlow_condensed.className}`}
     >
       <NavBar />
-      <div className={`h-full ${bellefeir.className}`}>{children}</div>
+      <div className={`h-full relative ${bellefeir.className}`}>{children}</div>
     </section>
   );
 }

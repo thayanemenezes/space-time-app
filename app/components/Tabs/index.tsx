@@ -1,8 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
-
-type TabKey = "MOON" | "MARS" | "EUROPA" | "TITAN";
+import React from "react";
 
 interface DestinationTabsProps {
   activeTab: string;

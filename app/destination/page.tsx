@@ -24,7 +24,7 @@ export default function Destination() {
   return (
     <div className=" flex content-center lg:justify-around justify-evenly h-screen items-center w-11/12 m-auto lg:flex-row sm:flex-col flex-col">
       <div className="lg:w-1/2 md:w-10/12 lg:text-left text-center">
-        <h6 className="font-normal text-3xl lg:mb-28 mt-4 mb-16 tracking-widest">
+        <h6 className="font-normal text-2xl lg:text-3xl lg:mb-28 mt-4 mb-16 tracking-widest">
           <span className="font-title mr-2 text-gray-500 ">01</span>
           <span className="font-sans_serif mr-2 text-gray-200">
             PICK YOUR DESTINATION
