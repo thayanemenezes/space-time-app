@@ -46,10 +46,13 @@ export default function DestinationTabs({
   const isActive = (tab: string) => activeTab === tab;
 
   return (
-    <div className="font-serif  text-sm font-medium lg:w-2/6">
+    <div className=" text-sm font-medium lg:w-2/6">
       <ul className="flex flex-wrap -mb-px ">
         {Object.keys(tabContent).map((tab) => (
-          <li key={tab} className="me-2 text-lg">
+          <li
+            key={tab}
+            className="me-2 text-lg font-sans_serif tracking-widest"
+          >
             <button
               onClick={() => setActiveTab(tab)}
               className={`inline-block p-2 border-b-2 ${
@@ -65,21 +68,25 @@ export default function DestinationTabs({
       </ul>
 
       <div className="mt-4 text-lg">
-        <h2 className="md:text-8xl text-6xl font-sans font-normal">
+        <h2 className="md:text-8xl text-5xl font-normal">
           {tabContent[activeTab].title}
         </h2>
-        <p className="mt-2">{tabContent[activeTab].text}</p>
-        <hr className="mt-5 h-px my-8 bg-gray-600 border-0 " />
-        <div className="mt-5 flex justify-between w-4/6">
+        <p className="mt-2 font-text text-base">{tabContent[activeTab].text}</p>
+        <hr className="mt-5 h-px my-8 bg-gray-600 border-0" />
+        <div className="mt-5 flex justify-between lg:w-4/6 w-5/6">
           <div>
-            <p className="uppercase text-gray-400">Distance:</p>
-            <p className="font-sans uppercase text-xl">
+            <p className="uppercase font-sans_serif tracking-wider text-gray-400">
+              Distance:
+            </p>
+            <p className="uppercase text-xl">
               {tabContent[activeTab].distance}
             </p>
           </div>
           <div>
-            <p className="uppercase text-gray-400">Travel Time:</p>
-            <p className="font-sans uppercase text-xl">
+            <p className="uppercase text-gray-400 font-sans_serif tracking-wider">
+              Travel Time:
+            </p>
+            <p className="uppercase text-xl">
               {tabContent[activeTab].travelTime}
             </p>
           </div>

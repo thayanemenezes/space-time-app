@@ -18,13 +18,13 @@ export default function NavBar() {
   };
 
   return (
-    <div className="flex items-center w-full m-auto justify-between pt-5 lg:pt-0">
+    <div className="flex items-center text-lg tracking-wider w-full m-auto justify-between pt-5 lg:pt-0 ">
       <Image
         src={"/assets/shared/logo.svg"}
         alt="logo"
         width={50}
         height={50}
-        className="lg:ml-16 ml-5"
+        className="lg:ml-16 ml-5 md:mt-10"
       />
 
       <div className="sm:hidden mr-5">
@@ -43,7 +43,7 @@ export default function NavBar() {
         >
           <Link
             href="/home"
-            className={`flex items-center ${
+            className={`flex items-center text-lg tracking-wider ${
               isActive("/home") ? "text-gray-200" : "text-white"
             }`}
           >
@@ -59,7 +59,7 @@ export default function NavBar() {
         >
           <Link
             href="/destination"
-            className={`flex items-center ${
+            className={`flex items-center text-lg tracking-wider ${
               isActive("/destination") ? "text-gray-200" : "text-white"
             }`}
           >
@@ -75,7 +75,7 @@ export default function NavBar() {
         >
           <Link
             href="/crew"
-            className={`flex items-center ${
+            className={`flex items-center text-lg tracking-wider ${
               isActive("/crew") ? "text-gray-200" : "text-white"
             }`}
           >
@@ -91,7 +91,7 @@ export default function NavBar() {
         >
           <Link
             href="/technology"
-            className={`flex items-center ${
+            className={`flex items-center text-lg tracking-wider ${
               isActive("/technology") ? "text-gray-200" : "text-white"
             }`}
           >

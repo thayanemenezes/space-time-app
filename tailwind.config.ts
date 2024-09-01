@@ -42,8 +42,10 @@ const config: Config = {
         xlg: "9rem",
       },
       fontFamily: {
-        sans: ["Bellefair", "sans-serif"],
-        serif: ["Barlow Condensed", "serif"],
+        serif: ["Bellefair", "serif"],
+        sans_serif: ["Barlow Condensed", "sans-serif"],
+        text: ["Barlow", "sans-serif"],
+        title: ["Barlow Condensed Bold", "sans-serif"],
       },
       borderRadius: {
         full: "100%",
@@ -51,8 +53,11 @@ const config: Config = {
       outlineWidth: {
         50: "50px",
       },
+      color: {
+        dark: "#0b0e17",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animated")],
 };
 export default config;

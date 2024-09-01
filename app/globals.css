@@ -8,8 +8,16 @@
     src: url("../public/fonts/Bellefair/Bellefair-Regular.ttf");
   }
   @font-face {
+    font-family: "Barlow Condensed Bold";
+    src: url("../public/fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf");
+  }
+  @font-face {
     font-family: "Barlow Condensed";
-    src: url("../public/fonts/Barlow_Condensed/BarlowCondensed-Light.ttf");
+    src: url("../public/fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Barlow";
+    src: url("../public/fonts/Barlow/Barlow-Regular.ttf");
   }
 }
 
@@ -37,6 +45,10 @@ body {
 body {
   color: #fff;
   box-sizing: border-box;
+}
+
+h6 {
+  font-family: "Barllow Condensed", sans-serif;
 }
 
 @layer utilities {

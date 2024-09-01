@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow_Condensed, Bellefair } from "next/font/google";
 import "../globals.css";
-import NavBar from "../components/Nav";
+import NavBar from "../components/NavBar";
 
 const barlow_condensed = Barlow_Condensed({
   subsets: ["latin"],
@@ -25,7 +25,7 @@ export default function DestinationLayout({
 }>) {
   return (
     <section
-      className={`h-full w-full bg-destination-tablet lg:bg-destination-desktop md:bg-destination-tablet bg-no-repeat bg-cover ${barlow_condensed.className}`}
+      className={`h-full w-full min-h-screen bg-destination-tablet lg:bg-destination-desktop md:bg-destination-tablet bg-no-repeat bg-cover ${barlow_condensed.className}`}
     >
       <NavBar />
       <div className={`h-full ${bellefeir.className}`}>{children}</div>

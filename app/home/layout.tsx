@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow_Condensed, Bellefair } from "next/font/google";
 import "../globals.css";
-import NavBar from "../components/Nav";
+import NavBar from "../components/NavBar";
 
 const barlow_condensed = Barlow_Condensed({
   subsets: ["latin"],
