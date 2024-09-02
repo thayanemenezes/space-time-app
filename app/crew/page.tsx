@@ -45,47 +45,51 @@ export default function Crew() {
   }, [activeTab]);
 
   return (
-    <div className="flex content-center lg:justify-center justify-evenly h-screen lg:items-start items-center w-11/12 m-auto lg:flex-row sm:flex-col flex-col mt-8">
-      <div className="lg:w-1/2 md:w-10/12 lg:text-left text-center">
+    <div className="lg:w-10/12 m-auto lg:h-screen flex content-center lg:justify-center flex-col mt-8">
+      <div className="lg:w-1/2 md:w-10/12 w-full lg:text-left text-center">
         <h6 className="font-normal text-2xl lg:text-3xl lg:mb-28 md:mt-4 mb-16 tracking-widest">
           <span className="font-title mr-2 text-gray-500">02</span>
           <span className="font-sans_serif mr-2 text-gray-200">
             MEET YOUR CREW
           </span>
         </h6>
-        <h1 className="text-gray-500 text-2xl lg:text-3xl mb-5">
-          {crewData[activeTab].role}
-        </h1>
-        <h1 className="text-gray-300 text-3xl mb-8 lg:text-6xl">
-          {crewData[activeTab].name}
-        </h1>
-        <p className="font-text text-gray-300 text-lg w-11/12 m-auto lg:m-0 ">
-          {crewData[activeTab].description}
-        </p>
-        <div className="flex justify-center lg:justify-start items-end lg:mt-48 mt-5 space-x-4">
-          {crewData.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveTab(index)}
-              className={`w-4 h-4 rounded-full ${
-                activeTab === index ? "bg-white" : "bg-gray-400"
-              }`}
-            />
-          ))}
-        </div>
       </div>
-      <div className="relative w-1/2 sm:w-2/6 mt-6 h-5/6 flex">
-        <Image
-          src={crewData[activeTab].image}
-          alt={crewData[activeTab].name}
-          width={400}
-          height={400}
-          className={`w-full h-auto self-center ${
-            animate
-              ? "animate-fade animate-once animate-duration-500 animate-delay-100 animate-ease-linear"
-              : ""
-          }`}
-        />
+      <div className="flex lg:flex-row flex-col w-full h-auto justify-between items-center">
+        <div className="lg:w-1/2 text-center lg:text-left">
+          <h1 className="text-gray-500 text-2xl lg:text-3xl mb-5">
+            {crewData[activeTab].role}
+          </h1>
+          <h1 className="text-gray-300 text-3xl mb-8 lg:text-6xl">
+            {crewData[activeTab].name}
+          </h1>
+          <p className="font-text text-gray-300 text-lg w-11/12 m-auto lg:m-0 ">
+            {crewData[activeTab].description}
+          </p>
+          <div className="flex justify-center lg:justify-start items-end lg:mt-48 mt-5 space-x-4">
+            {crewData.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveTab(index)}
+                className={`w-4 h-4 rounded-full ${
+                  activeTab === index ? "bg-white" : "bg-gray-400"
+                }`}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="relative w-1/2 sm:w-2/6 mt-6 h-5/6 flex">
+          <Image
+            src={crewData[activeTab].image}
+            alt={crewData[activeTab].name}
+            width={400}
+            height={400}
+            className={`w-full h-auto self-center ${
+              animate
+                ? "animate-fade animate-once animate-duration-500 animate-delay-100 animate-ease-linear"
+                : ""
+            }`}
+          />
+        </div>
       </div>
     </div>
   );

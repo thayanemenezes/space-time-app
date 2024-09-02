@@ -8,7 +8,7 @@ export default function Technology() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="lg:w-10/12 m-auto lg:h-screen flex flex-col">
+    <div className="lg:w-10/12 m-auto lg:h-screen flex content-center lg:justify-center justify-evenly flex-col mt-8">
       <div className="lg:w-1/2 md:w-10/12 w-full lg:text-left text-center">
         <h6 className="font-normal text-2xl lg:text-3xl lg:mb-28 mb-10 mt-10 tracking-widest">
           <span className="font-title mr-2 text-gray-500">03</span>
