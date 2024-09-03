@@ -29,9 +29,11 @@ export default function Technology() {
         </div>
         <div className="flex justify-center mt-5 flex-row lg:flex-col">
           {technologyData.map((value, index) => (
-            <div className="flex justify-center flex-col lg:flex-row">
+            <div
+              className="flex justify-center flex-col lg:flex-row"
+              key={index}
+            >
               <button
-                key={index}
                 onClick={() => setActiveTab(index)}
                 className={`border-gray-200 border-solid border-2 text-xl text-gray-200 rounded-full h-12 w-12 lg:w-16 lg:h-16 mx-3 lg:my-5 ${
                   activeTab === index
